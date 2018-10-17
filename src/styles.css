@@ -1,0 +1,12 @@
+.float-left {
+  float:left;
+}
+
+#winner {
+  display: block;
+}
+
+.night {
+  background-color: #f0f0f0;
+  color: #0f0f0f;
+}

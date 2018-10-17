@@ -9,54 +9,62 @@
           <h1>Mafia Game!</h1>
           <button class="btn btn-success mt-3" id="start">Start Game</button>
         </div>
-        <div id="game">
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header"> <span id="user-name-one"></span></div>
+        <div class="row" id="game">
+          <div class="card bg-light mb-3 float-left" style="max-width: 18rem;">
+            <div class="card-header"> <span id="player0name"></span></div>
             <div class="card-body">
-              <p class="card-text"><span id="day-vote"></span></p>
+              <p class="card-text"><span id="player0vote"></span></p>
             </div>
           </div>
 
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header"> <span id="user-name-one"></span></div>
+          <div class="card bg-light mb-3 float-left" style="max-width: 18rem;">
+            <div class="card-header"> <span id="player1name"></span></div>
             <div class="card-body">
-              <p class="card-text"><span id="day-vote"></span></p>
+              <p class="card-text"><span id="player1vote"></span></p>
             </div>
           </div>
 
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header"> <span id="user-name-one"></span></div>
+          <div class="card bg-light mb-3 float-left" style="max-width: 18rem;">
+            <div class="card-header"> <span id="player2name"></span></div>
             <div class="card-body">
-              <p class="card-text"><span id="day-vote"></span></p>
+              <p class="card-text"><span id="player2vote"></span></p>
             </div>
           </div>
 
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header"> <span id="user-name-one"></span></div>
+          <div class="card bg-light mb-3 float-left" style="max-width: 18rem;">
+            <div class="card-header"> <span id="player3name"></span></div>
             <div class="card-body">
-              <p class="card-text"><span id="day-vote"></span></p>
+              <p class="card-text"><span id="player3vote"></span></p>
             </div>
           </div>
 
-          <div class="card bg-light mb-3" style="max-width: 18rem;">
-            <div class="card-header"> <span id="user-name-one"></span></div>
+          <div class="card bg-light mb-3 float-left" style="max-width: 18rem;">
+            <div class="card-header"> <span id="player4name"></span></div>
             <div class="card-body">
-              <p class="card-text"><span id="day-vote"></span></p>
+              <p class="card-text"><span id="player4vote"></span></p>
             </div>
           </div>
         </div>
-        <div>
+        <div class="row">
+          <div id="info">
+            <p>Game Log: <span id="log"></span></p>
+            <p>Current Players: <span id="current-players"></span></p>
+            <p>Time: <span id="time"></span></p>
+            <p>Turn: <span id="turn"></span></p>
+          </div>
+
           <form id="user-answer">
             <label for="user-input">Select Player to Kill</label>
             <select name="user-input" id="user-input">
             </select>
-
             <button type="submit" class="btn btn-warning">Submit Answer</button>
           </form>
-          <div id="result">
-            <h3>Winner: <span id="winner"></span></h3>
-          </div>
+
         </div>
-      </div> 
+        <div class="row" id="result">
+          <h3><span id="game-over"></span></h3>&nbsp;
+          <p>Winner: <span id="winner"></span></p>
+        </div>
+      </div>
   </body>
 </html>
